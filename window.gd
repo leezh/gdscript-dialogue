@@ -6,7 +6,7 @@ var hscroll
 var vscroll
 
 func _ready():
-	get_tree().set_editor_hint(true)
+	OS.set_low_processor_usage_mode(true)
 	editor = get_node("editor")
 	editor.set_right_disconnects(true)
 	# TODO: Find a more elegant way to do this
